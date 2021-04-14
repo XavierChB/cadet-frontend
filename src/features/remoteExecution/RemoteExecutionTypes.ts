@@ -97,6 +97,37 @@ export const deviceTypes: DeviceType[] = [
     ],
     languageChapter: 3,
     deviceLibraryName: ExternalLibraryName.EV3
+  },
+  {
+    id: 'ESP',
+    name: 'ESP32',
+    // This list must be in the same order as the list here:
+    // https://github.com/source-academy/sinter/blob/ev3/devices/ev3/src/ev3_functions.c#L652
+    internalFunctions: [
+      'init_led',
+      'led_on',
+      'led_off',
+      'led_fade',
+      'color_sensor_init',
+      'color_get_rgbc_raw',
+      'color_get_rgb',
+      'color_get_lux',
+      'color_get_color_temperature',
+      'motor_init',
+      'motor_step',
+      'motor_full_steps',
+      'ultrasonic_init',
+      'ultrasonic_measure_cm',
+      'imu_init',
+      'imu_get_pitch',
+      'imu_get_yaw',
+      'imu_get_roll',
+      'imu_set_zero_angle',
+      'imu_get_angle',
+      'esp_wait'
+    ],
+    languageChapter: 3,
+    deviceLibraryName: ExternalLibraryName.ESP
   }
 ];
 
