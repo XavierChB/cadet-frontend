@@ -114,7 +114,6 @@ export const deviceTypes: DeviceType[] = [
       'color_get_lux',
       'color_get_color_temperature',
       'motor_init',
-      'motor_step',
       'motor_full_steps',
       'ultrasonic_init',
       'ultrasonic_measure_cm',
